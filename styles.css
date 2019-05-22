@@ -1,0 +1,376 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+
+
+/* GENERAL */
+
+/* Pour uniformiser la page avec des navigateurs differents. */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    display: block;
+    background-color: #bf0000;
+    margin-left: auto;  
+    margin-right: auto;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.box
+{
+
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.box p
+{
+    background-color: rgb(255,255,255,0.5);
+}
+
+ul
+{
+    list-style: none
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    font-family: Amatic Sc;
+    font-size: 3em;
+    text-align: center;
+    margin: 3% 0;
+    background-color: rgb(255,255,255,0.75);
+    border-radius:10px;
+    border-width: 2px;
+    border: 1px solid;
+}
+
+.box h3
+{
+    margin: 3% 1%;
+    font-family: Tangerine, sans-serif;
+    font-size: 2.5em;
+    background-color: rgb(255,255,255,0.4);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+
+/* HEADER */
+
+header
+{
+    padding-top: 0.5%;
+    background-color: #fc3e00;
+    width: 100%;
+    /* Pour fixer le header en haut de la page.*/
+    position: fixed;
+    top: 0;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header h1
+{
+    float: left;
+    font-family: Tangerine, serif;
+    font-size: 3em;
+    color: #111;
+    margin-left: 2%;
+    margin-top: 0.2%;
+    
+}
+
+header nav
+{
+    float: right;
+    margin-right: 2%;
+}
+
+nav ul li
+{
+    display: inline;
+}
+
+nav ul li a
+{
+    text-transform: uppercase;
+    color: #111;
+    font-weight: bold;
+    font-family: Amatic SC, sans-serif;
+    margin-left: 25px;
+    font-size: 2em;
+}
+
+nav ul li a:hover
+{
+    color:white;
+}
+
+ul img
+{    
+    overflow:hidden;
+    border-radius:150px;
+    width: 256px;
+    height: 250px;
+    border: 1px solid;
+}
+
+#baniere
+{
+    height: 450px;
+    width: 100%;
+    background: url('https://image.noelshack.com/fichiers/2019/13/2/1553561401-banniere-pnj.jpeg');
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* PERFORMANCES */
+
+#performances
+{
+    margin: 2.5%;
+    padding: 3%;
+    display: inline-block;
+    width: 80%;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1435034568314-8303dbda4b8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80');
+    
+}
+
+ul p
+{
+    text-align: justify;
+    padding: 3%;
+}
+
+#performances li
+{
+    width:50%;
+    border: solid;
+    overflow:hidden;
+    border-radius:15px;
+    border-width: 2px;
+    margin: 0.4%;
+    background-color: rgb(255,255,255,0.6);
+}
+
+#performances ul
+{
+    display: flex;
+}
+
+#performances ul li
+{
+    text-align: center;
+    display: inline-block;
+}
+
+.titr h3
+{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: Tangerine, sans-serif;
+    font-size: 40px;
+    background-color: rgb(255,255,255,0.5);
+    padding: 5px
+}
+
+
+/* ABOUT */
+
+#about
+{
+    margin: 2.5%;
+    padding: 3%;
+    display: inline-block;
+    width: 80%;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://image.noelshack.com/fichiers/2019/13/1/1553513469-darius-soodmand-116255-unsplash.jpg');
+}
+
+#about p
+{
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid;
+}
+
+
+/* PRICES */
+
+#prices
+{
+    margin: 2.5%;
+    padding: 3%;
+    display: inline-block;
+    width: 80%;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://image.noelshack.com/fichiers/2019/13/1/1553514114-wai-siew-1166532-unsplash.jpg');
+}
+
+tbody
+{
+    background-color: rgb(255,255,255,0.8);
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+th
+{
+    font-family: Poppins, serif;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(255,255,255,0.5);
+    width: 10%;
+    border-radius: 5px;
+}
+
+td
+{
+    font-family: Poppins, serif;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+/* CONTACT */
+
+#contact
+{
+    margin: 2.5%;
+    padding: 3%;
+    display: inline-block;
+    width: 80%;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://image.noelshack.com/fichiers/2019/13/1/1553529160-william-fitzgibbon-95728-unsplash.jpg);
+}
+
+#contact p
+{
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#boxleft, #boxright
+{
+    background-color: rgb(255,255,255,0.5);
+    text-align: center;
+    margin : 0.25%;
+    float: left;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 0.30%;
+    display: block;
+}
+
+#boxleft
+{
+    width:49%;  
+}
+
+#boxright
+{
+    width:48%;
+}
+
+iframe
+{
+    height:100%;
+    width:100%;
+}
+
+label 
+{
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 24%;
+    text-align: right;
+}
+
+input, textarea 
+{
+    /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+    font: 1em sans-serif;
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 70%;
+    box-sizing: border-box;
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid #999;
+}
+
+/* Pour souligner légèrement les éléments actifs */
+input:focus, textarea:focus 
+{
+    border-color: #000;
+}
+
+textarea 
+{
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+    /* Pour donner assez de place pour écrire du texte */
+    height: 10em;
+    /* Pour empecher l'utilisateur de modifier la dimension du cadre */
+    resize: none;
+}
+ 
+/* Cette marge supplémentaire représente grosso modo le même espace que celui entre les étiquettes et les champs texte */
+#send
+{
+    /* Pour placer le bouton à la même position que les champs texte */
+    margin-left: 24.75%; 
+}
+
+/* FOOTER */
+        
+footer
+{
+    background-color: rgb(255,255,255,0.5);
+    text-align: center;
+    clear: both;
+    --padding: 2.5%;
+}

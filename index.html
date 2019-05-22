@@ -1,0 +1,177 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Wild Circus</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>The Wild Circus</h1>
+            <nav>
+                <ul>
+                <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+                    <li><a href="#performances">Performances</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#prices">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="baniere">
+        </div>
+        <section id="performances">
+                <h2>Performances</h2>
+            
+            <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+                <ul>
+                    <!-- performance 1 -->
+                    <li>
+                        <div class="titr"><h3>Laugh</h3></div>
+                        <img src="https://image.noelshack.com/fichiers/2019/12/7/1553382094-clows.png" alt="A clown">
+                        <p>
+                            As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.
+                        </p>
+                    </li>
+                    <!-- performance 2 -->
+                    <li>                       
+                        <div class="titr"><h3>Dream</h3></div>
+                        <img src="https://image.noelshack.com/fichiers/2019/12/7/1553382535-sans-titre.png" alt="Live a dream">
+                        <p>
+                            Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.
+                        </p>
+                    </li>
+                    <!-- performance 3 -->
+                    <li>
+                        <div class="titr"><h3>Marvel at</h3></div>
+                        <img src="https://image.noelshack.com/fichiers/2019/12/7/1553382791-mervyn-chan-262968-unsplash.jpg" alt="A spark of wonder">
+                        <p>
+                            Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.
+                        </p>
+                    </li>
+                </ul>    
+        </section>
+        
+        <hr/>
+        
+        <section id="about">
+            <div class="box">
+                <h2>About Us</h2>
+                <p>
+                    A driving force of French cultural influence for 25 years, The Wild Circus creates, produces and offers shows touching your inner child.<br>
+                    <br>
+                    Considered a contemporary circus influencer, The Wild Circus combines circus arts with music, dance, technology and theater, fulfilling the expectations of audiences seeking meaningful entertainment.<br>
+                    <br>
+                    These creations have been acclaimed by thousands of viewers and have over 5,500 performances in some 550 cities around the world.<br>
+                </p>
+            </div>
+                <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+        </section>
+        
+        <hr/>
+
+        <section id="prices"> 
+          <h2>Prices</h2>
+            <div class="box">
+               
+                <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+                | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+                Semaines hors mercredi  |         |                         |                                |
+                week-end et mercredi    |         |                         |                                |-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="1">Day</th>
+                            <th colspan="1">Adults</th>
+                            <th colspan="1">Children under 12 years</th>
+                            <th colspan="1">Children over 12 years</th>
+                            <th colspan="1">Groups (more than 10 persons)</th>
+                            <th colspan="1">Schools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Week except Wednesday</th>
+                            <td>$10</td>
+                            <td>$5</td>
+                            <td>$7,5</td>
+                            <td>$75</td>
+                            <td>$6 per person</td>
+                        </tr>
+                        <tr>
+                            <th>Week-end and Wednesday</th>
+                            <td>$12</td>
+                            <td>$6</td>
+                            <td>$9</td>
+                            <td>$90</td>
+                            <td>$9 per person</td>
+                        </tr>   
+                    </tbody>
+                </table>        
+            </div>
+        </section>
+        
+        <hr/>
+
+        <section id="contact">
+            <div class="box">
+                <h2>Contact Us</h2>
+                <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs.
+                Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.-->
+                <div id="boxleft">
+                    <h3>Send us a message</h3>
+            
+                    <form action="index.html">
+                        <label for="name">Your name:</label>
+                        <input id="name" type="text" name="name" placeholder="Write your name here..." required>
+                        <br>
+                
+                        <label for="eMail">Your e-Mail:</label>
+                        <input id="eMail" type="eMail" name="eMail" placeholder="Write your e-Mail here..." required>
+                        <br>
+                
+                        <label for="phone">Your phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Write your phone here...">
+                        <br>
+                    
+                        <label for="message">Your message:</label>
+                        <textarea cols="1" rows="1" id="message" placeholder="Write your message here..." required></textarea>
+                        <br>
+                        <input id="send" type="submit" value="Send">
+                    </form>
+                </div>
+                <div id="boxright">
+                    <h3>Our adress</h3>
+                    <p> 
+                        The Wild Circus<br>
+                        123, avenue de Charles de Gaulle<br>
+                        75001 PARIS Cedex 01<br>
+                        Tél : <a href="tel+33175000015">+33 (0)1 75 00 00 15</a><br>
+                        Fax : <a href="fax+33175000016">+33 (0)1 75 00 00 16</a><br>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.3993894205638!2d2.2678557980488048!3d48.88198971660651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665663cd209b7%3A0x55e0dac31a1db88f!2s123+Avenue+Charles+de+Gaulle%2C+92200+Neuilly-sur-Seine!5e1!3m2!1sfr!2sfr!4v1553249264433" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>   
+        
+        <footer>
+            <!-- TODO: Entre ton nom et prénom.
+            Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr).
+            Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.-->
+            <p>&copy; Wild Circus by SABOUNI Youssef on March 22, 2019.<br>
+            <a href="https://wildcodeschool.fr" target="_blank">Wild Code School</a> |
+            France-IOI: <a href="http://www.france-ioi.org/user/perso.php?sLogin=youssefsabouni" target="_blank">
+            My profile</a> | SoloLearn: <a href="https://www.sololearn.com/Profile/13283357" target="_blank">My profile</a>
+            </p>
+        </footer>
+    </body>
+</html>
